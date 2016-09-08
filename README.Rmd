@@ -1,0 +1,32 @@
+fluxy
+=====
+
+InfluxDB client
+
+## Install
+
+Development version from GitHub
+
+```{r eval=FALSE}
+devtools::install_github("sckott/fluxy")
+```
+
+```{r}
+library("fluxy")
+```
+
+## initialize a client
+
+```{r}
+(cli <- flux())
+```
+
+## show databases
+
+```{r}
+cli$db_show()
+```
+
+## Meta
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
